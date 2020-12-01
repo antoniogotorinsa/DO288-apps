@@ -19,7 +19,11 @@ public class ServerHostEndPoint {
     catch (Exception e) {
        e.printStackTrace();
     }
+<<<<<<< HEAD
     String msg = "I am running on server "+host+" Version 2.0 \n";
+=======
+    String msg = "I am running on server "+host+" Version 220 \n";
+>>>>>>> 4c2847663ebe32aabaa3a0252dcc73d24bafe7f8
     return Response.ok(msg).build();
   }
 }
