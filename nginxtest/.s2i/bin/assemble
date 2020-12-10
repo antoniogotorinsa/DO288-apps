@@ -1,6 +1,6 @@
 echo assemble personalizado
 echo esto es una prueba > info.html
-FECHA=$(date +%d - %m - %Y)
+FECHA=$(date '+ %d-%m-%Y')
 echo la fecha de hoy es : $FECHA >>info.html
 
 . /usr/libexec/s2i/assemble
