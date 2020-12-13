@@ -12,13 +12,16 @@ config_s2i
 
 echo "---> Installing application source"
 #TODO copy html source code to workdir
-
+cp -Rf /tmp/src/*.html ./
 #TODO put date format an create an info page Page built on ...date.... and 
 #in other line, Proudly serve by apache . Version $HTTPD_VERSION
 # and y the end line, the author.
-
-
 echo "---> Creating info page"
+DATE=$(date +%d-%m-%Y)
+echo "Page build on $DATE" > info.hml
+echo "Proudly server by apache. Version: $HTTPD_VERSION" >> info.html
+echo "Build by AGG" >> info.html
+echo "--->end Creating info page"
 
 ######## CUSTOMIZATION ENDS HERE ############
 
