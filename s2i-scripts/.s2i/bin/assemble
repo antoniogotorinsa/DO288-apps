@@ -18,7 +18,7 @@ cp -Rf /tmp/src/*.html ./
 # and y the end line, the author.
 echo "---> Creating info page"
 DATE=$(date +%d-%m-%Y)
-echo "Page build on $DATE" > info.hml
+echo "Page build on $DATE" > info.html
 echo "Proudly server by apache. Version: $HTTPD_VERSION" >> info.html
 echo "Build by AGG" >> info.html
 echo "--->end Creating info page"
