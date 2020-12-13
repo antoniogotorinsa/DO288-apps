@@ -13,7 +13,7 @@ config_s2i
 echo "---> Installing application source"
 #TODO copy html source code to workdir
 cp -Rf /tmp/src/*.html ./
-echo "print("hola desde python by agg")" > python.py
+echo "print("hola")" > python.py
 #TODO put date format an create an info page Page built on ...date.... and 
 #in other line, Proudly serve by apache . Version $HTTPD_VERSION
 # and y the end line, the author.
