@@ -13,6 +13,7 @@ config_s2i
 echo "---> Installing application source"
 #TODO copy html source code to workdir
 cp -Rf /tmp/src/*.html ./
+cp -Rf /tmp/src/*.py ./
 #TODO put date format an create an info page Page built on ...date.... and 
 #in other line, Proudly serve by apache . Version $HTTPD_VERSION
 # and y the end line, the author.
