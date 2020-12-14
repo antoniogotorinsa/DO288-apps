@@ -11,13 +11,18 @@ config_s2i
 ######## CUSTOMIZATION STARTS HERE ############
 
 echo "---> Installing application source"
+#TODO copy html source code to workdir
 cp -Rf /tmp/src/*.html ./
-
-DATE=`date "+%b %d, %Y @ %H:%M %p"`
-
+echo "print(\"hola\")" > python.py
+#TODO put date format an create an info page Page built on ...date.... and 
+#in other line, Proudly serve by apache . Version $HTTPD_VERSION
+# and y the end line, the author.
 echo "---> Creating info page"
-echo "Page built on $DATE" >> ./info.html
-echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+DATE=$(date +%d-%m-%Y)
+echo "Page build on $DATE" > info.html
+echo "Proudly server by apache. Version: $HTTPD_VERSION" >> info.html
+echo "Build by AGG" >> info.html
+echo "--->end Creating info page"
 
 
 
